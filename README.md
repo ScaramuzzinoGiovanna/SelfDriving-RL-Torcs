@@ -32,4 +32,35 @@ sudo apt-get install libvorbis-dev
 Per eseguire il codice sono necessari:
 - __Python 3.6__
 - __tensorflow 2.0__, __Keras__ 
-- __Matplotlib__, __Numpy__, __Matplotlib__
+- __Matplotlib__, __Numpy__
+
+# Files Progetto
+Il progetto è stato suddiviso per praticità in due cartelle, essendo due gli esperimenti effettuati:
+- __Q-learning__: contenente il codice riguardante la realizzazione dell'algoritmo di Q-learning applicato al nostro caso di studio.
+- __Deep Q-learning__: contenente il codice riguardante la realizzazione dell'algoritmo di Deep Q-learning applicato al nostro caso di studio.
+
+
+I file in comune sono:
+
+ - environment.py: file che prevede la realizzazione della classe Environment;
+ - snakeoil3_gym.py: per la connessione client-server;
+ - config_practice_race.py: per la selezione del circuito e della posizione di start dell'auto;
+ - autostart.sh: per l'apertura in modo automatico di torcs in modo da poter visualizzare la simulazione
+ - utility.py: contenente funzioni di utility;
+   <br>
+   
+Nella cartella Q-learning gli altri files usati sono:
+
+  - discretization.py: per la discretizzazione dello spazio degli stati
+  - q_table.py: per la realizzazione della q-table
+  - q_learning_train.py: per l'implementazione dell'algoritmo di apprendimento (file di main per l'addestramento)
+  - q_learning_test.py: per l'implementazione del test per la valutazione di quanto appreso
+  - plots.py: per la realizzazione dei plots
+   
+Mentre per la Deep-Q-Learning:
+
+  - replay_buffer.py: implementazione del replay buffer
+  - net.py: implementazione della rete neurale
+  - agent.py: dqn agent che usa il replay buffer e costruisce ed aggiorna le reti neurali
+  - dqn_train: implementazione dell'algoritmo di apprendimento (file di main per l'addestramento)
+  - dqn_test.py: implementazione del test per la valutazione di quanto appreso
