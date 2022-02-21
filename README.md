@@ -9,7 +9,7 @@ https://sourceforge.net/projects/torcs/files/torcs-win32-bin/1.3.4/
 La SCR patch utilizzata è disponibile al link:
 https://sourceforge.net/projects/cig/files/SCR\%20Championship/Server\%20Linux/2.1/
 <br>
-Clona la repository
+Clona la repository:
 ```sh
 git clone https://github.com/ScaramuzzinoGiovanna/SelfDriving-RL-Torcs.git
 ```
