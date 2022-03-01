@@ -73,7 +73,7 @@ def test(env, q_table, discr, c, n_avg_esp):
 
 
 if __name__ == "__main__":
-    path = 'results_0.9eps/'
+    path = 'results/'
     vision = False
     validation = False
 
